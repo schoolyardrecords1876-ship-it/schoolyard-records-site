@@ -90,3 +90,22 @@
 .release-art-bottomline{bottom:23px;font-size:clamp(18px,2.4vw,28px);font-weight:500;line-height:.96;letter-spacing:-.035em;text-align:left}
 .release-info h3{max-width:360px}
 @media(max-width:680px){.release-art-coming{min-height:300px}.release-cover-sigil{width:116px}.release-art-topline{font-size:7px;left:14px;right:14px}.release-art-bottomline{left:14px;bottom:17px}}
+
+
+/* Crisp gallery photography + intentional culture panels */
+.archive-featured .archive-photo{aspect-ratio:4/3}
+.archive-graphic{aspect-ratio:4/4.5;position:relative;overflow:hidden;padding:22px;display:flex;flex-direction:column;justify-content:space-between;isolation:isolate}
+.archive-graphic-blue{background:radial-gradient(circle at 80% 18%,rgba(255,255,255,.58),transparent 28%),linear-gradient(145deg,#7cd8ff 0%,#8b82ff 53%,#7657ff 100%);color:#100d16}
+.archive-graphic-pink{background:radial-gradient(circle at 15% 90%,rgba(124,216,255,.6),transparent 34%),linear-gradient(150deg,#21132f 0%,#6e1d68 49%,#ff3eaa 100%);color:#fffdfb}
+.graphic-topline,.graphic-bottomline{position:relative;z-index:2;font:8px var(--mono);letter-spacing:.1em;line-height:1.6}
+.graphic-bottomline{padding-top:12px;border-top:1px solid currentColor;opacity:.9}
+.graphic-word{position:relative;z-index:2;font:700 clamp(28px,3.1vw,43px)/.88 var(--display);letter-spacing:-.09em}
+.graphic-word em{font-style:normal;background:linear-gradient(90deg,#ff3eaa,#fffdfb);-webkit-background-clip:text;background-clip:text;color:transparent}
+.archive-graphic-blue .graphic-word em{background:linear-gradient(90deg,#30114f,#ff3eaa);-webkit-background-clip:text;background-clip:text;color:transparent}
+.graphic-orbit{position:absolute;width:86%;aspect-ratio:1;border:1px solid rgba(16,13,22,.45);border-radius:50%;right:-28%;top:18%;box-shadow:0 0 0 20px rgba(16,13,22,.05),0 0 0 40px rgba(16,13,22,.04);z-index:0}
+.graphic-sigil{align-self:center;margin:auto;position:relative;z-index:1;width:clamp(84px,9vw,120px);aspect-ratio:1;border:2px solid #fffdfb;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 clamp(36px,4vw,49px)/1 var(--display);letter-spacing:-.12em;box-shadow:0 0 0 8px rgba(255,255,255,.09)}
+.graphic-sigil:before{content:"";position:absolute;inset:8px;border:1px solid #7cd8ff;border-radius:50%}
+.graphic-sigil>span{position:absolute;right:18%;top:18%;font:8px var(--mono);letter-spacing:0}
+.archive-manifesto figcaption strong{max-width:230px}
+@media(max-width:900px){.archive-featured .archive-photo{aspect-ratio:4/3}.archive-graphic{aspect-ratio:4/4.5}.graphic-word{font-size:clamp(30px,4.8vw,43px)}}
+@media(max-width:680px){.archive-featured .archive-photo{aspect-ratio:4/3}.archive-graphic{aspect-ratio:4/3;padding:20px}.graphic-word{font-size:clamp(32px,9vw,44px)}.graphic-sigil{width:92px;margin:8px auto}}
