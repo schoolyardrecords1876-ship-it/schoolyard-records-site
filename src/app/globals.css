@@ -31,3 +31,39 @@
 .roster-foot a:hover{color:#ff3eaa}
 .culture-panel-vibrant .culture-big-type em{color:#100d16;background:linear-gradient(90deg,#fffdfb,#7cd8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
 @media(max-width:680px){.hero-art{min-height:325px}.culture-panel{background:linear-gradient(145deg,#7657ff,#ff3eaa 58%,#7cd8ff)}}
+
+
+/* Authentic Schoolyard culture archive */
+.culture-archive{background:#100d16;color:#fffdfb;padding-top:88px;padding-bottom:92px}
+.archive-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:38px}
+.archive-heading .eyebrow{color:#b9a9ff;margin-bottom:18px}
+.archive-heading h2{font-size:clamp(46px,6.2vw,82px)}
+.archive-heading h2 em{background:linear-gradient(90deg,#ff3eaa,#7cd8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.archive-intro{max-width:340px;color:#c5bfce;line-height:1.8;font-size:13px;margin:0 0 5px}
+.archive-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:17px;align-items:start}
+.archive-card{margin:0;min-width:0}
+.archive-photo{position:relative;aspect-ratio:4/4.5;overflow:hidden;background:linear-gradient(145deg,#34205b,#7657ff)}
+.archive-featured .archive-photo{aspect-ratio:4/4.5}
+.archive-photo img{object-fit:cover;filter:saturate(1.08);transition:transform .5s,filter .3s}
+.archive-card:hover .archive-photo img{transform:scale(1.04);filter:saturate(1.18)}
+.archive-card figcaption{display:flex;flex-direction:column;gap:9px;padding:15px 0 0}
+.archive-card figcaption span{font:9px var(--mono);letter-spacing:.1em;color:#7cd8ff}
+.archive-card figcaption strong{font:500 18px var(--display);letter-spacing:-.035em;color:#fffdfb}
+.archive-note{font:9px var(--mono);letter-spacing:.06em;line-height:1.8;color:#aaa1b8;margin:30px 0 0;padding-top:16px;border-top:1px solid #32283e}
+.roster-open-call{display:grid;grid-template-columns:1.05fr .95fr;border:1px solid #473253;background:linear-gradient(120deg,#191321 0%,#17101f 55%,#26143a 100%);min-height:330px}
+.roster-open-copy{padding:clamp(25px,4vw,50px)}
+.roster-kicker{font:9px var(--mono);letter-spacing:.13em;color:#7cd8ff}
+.roster-open-copy h3{font:700 clamp(35px,4.4vw,59px)/.92 var(--display);letter-spacing:-.075em;margin:22px 0 18px}
+.roster-open-copy h3 em{font-style:normal;background:linear-gradient(90deg,#ff3eaa,#7cd8ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.roster-open-copy p{max-width:400px;color:#c5bfce;font-size:13px;line-height:1.8;margin:0 0 23px}
+.button-accent{background:linear-gradient(95deg,#7657ff,#ff3eaa);color:white}
+.button-accent:hover{background:#7cd8ff;color:#100d16}
+.roster-open-side{border-left:1px solid #473253;display:flex;flex-direction:column;align-items:center;justify-content:space-between;padding:28px}
+.roster-sigil{width:clamp(120px,16vw,190px);aspect-ratio:1;border:1px solid #ff3eaa;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 clamp(50px,7vw,80px)/1 var(--display);letter-spacing:-.12em;color:#fffdfb;position:relative;background:radial-gradient(circle at 70% 25%,rgba(124,216,255,.24),transparent 38%)}
+.roster-sigil:before{content:"";position:absolute;inset:9px;border:1px solid #7657ff;border-radius:50%}
+.roster-sigil>span{font:10px var(--mono);align-self:flex-start;margin-top:22%}
+.roster-open-side>div{display:flex;flex-wrap:wrap;justify-content:center;gap:7px}
+.roster-open-side>div span{font:8px var(--mono);letter-spacing:.09em;padding:8px 9px;border:1px solid #594164;color:#dcd3e8}
+.roster-open-side small{font:8px var(--mono);letter-spacing:.1em;color:#aaa1b8;text-align:center}
+@media(max-width:900px){.archive-grid{grid-template-columns:1fr 1fr}.archive-featured{grid-column:1/-1}.archive-featured .archive-photo{aspect-ratio:16/9}.archive-heading{align-items:flex-start}.roster-open-call{grid-template-columns:1fr .8fr}.roster-open-side{padding:22px}}
+@media(max-width:680px){.culture-archive{padding-top:68px;padding-bottom:68px}.archive-heading{flex-direction:column;gap:17px;margin-bottom:28px}.archive-grid{grid-template-columns:1fr;gap:25px}.archive-featured{grid-column:auto}.archive-featured .archive-photo,.archive-photo{aspect-ratio:4/3}.archive-card figcaption{padding-top:11px}.archive-card figcaption strong{font-size:17px}.roster-open-call{grid-template-columns:1fr}.roster-open-copy{padding:27px 23px}.roster-open-side{border-left:0;border-top:1px solid #473253;min-height:270px}.roster-sigil{width:125px}.roster-open-side>div span{font-size:7px}}
