@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { events, releases } from '@/data/content';
+import { events } from '@/data/content';
 
 function Arrow() { return <span aria-hidden="true" className="arrow">↗</span>; }
 
@@ -42,8 +42,13 @@ export default function Home() {
       <section className="section releases-section" id="music">
         <div className="section-heading"><div><p className="eyebrow">01 / THE SOUND</p><h2>FRESH FROM<br /><em>THE YARD.</em></h2></div><a className="text-link dark-link" href="#contact">Explore all releases <Arrow /></a></div>
         <div className="release-feature">
-          <div className="release-art"><Image src={releases[0].art} alt="Temporary release artwork placeholder" fill sizes="(max-width: 700px) 90vw, 46vw" /></div>
-          <div className="release-info"><p className="eyebrow">{releases[0].type}</p><h3>{releases[0].title}</h3><p className="release-artist">{releases[0].artist}</p><p className="body-copy">The next sound out of the Yard deserves a proper introduction. Official releases and listening links will appear here as they are confirmed.</p><a className="button button-dark" href={releases[0].streamingUrl}>Listen to the release <Arrow /></a><span className="content-warning">OFFICIAL RELEASES DROPPING SOON</span></div>
+          <div className="release-art release-art-coming" role="img" aria-label="Schoolyard Records official releases coming soon graphic">
+            <div className="release-art-orbit orbit-one" /><div className="release-art-orbit orbit-two" />
+            <div className="release-cover-sigil">SY<span>RECORDS</span></div>
+            <div className="release-art-topline"><span>PVAMU / INDEPENDENT</span><span>VOL. 001</span></div>
+            <div className="release-art-bottomline">THE NEXT SOUND<br />STARTS HERE.</div>
+          </div>
+          <div className="release-info"><p className="eyebrow">01 / SCHOOLYARD AUDIO</p><h3>THE NEXT SOUND IS ON THE WAY.</h3><p className="release-artist">OFFICIAL RELEASES · ARTIST SPOTLIGHTS · NEW MUSIC</p><p className="body-copy">We’re curating the next drop from the Yard. Follow Schoolyard for announcements, artist spotlights, and official listening links as each release is confirmed.</p><a className="button button-dark" href="mailto:schoolyardrecords1876@gmail.com?subject=Schoolyard%20Release%20Updates">Get release updates <Arrow /></a><span className="content-warning">STREAMING LINKS WILL BE ADDED WITH EACH OFFICIAL RELEASE.</span></div>
         </div>
       </section>
 
