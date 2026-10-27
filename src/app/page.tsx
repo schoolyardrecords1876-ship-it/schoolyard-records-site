@@ -29,10 +29,12 @@ export default function Home() {
           </div>
           <span className="hero-index">PVAMU · EST. BY STUDENTS</span>
         </div>
-        <div className="hero-art" role="img" aria-label="Schoolyard Records colorful graffiti wordmark">
-          <Image src="/images/schoolyard-graffiti.jpg" alt="Schoolyard Records graffiti logo" fill sizes="(max-width: 700px) 92vw, 45vw" className="hero-logo-image" />
+        <div className="hero-art" role="img" aria-label="Schoolyard Records original purple, pink, and icy blue graphic artwork">
           <div className="hero-art-top"><span>THE SCHOOLYARD UNIVERSE</span><span>VOL. 001</span></div>
+          <div className="hero-art-shape shape-one" /><div className="hero-art-shape shape-two" />
+          <div className="hero-art-stamp">SY<br /><small>RECORDS</small></div>
           <div className="hero-art-bottom"><span>ARTISTS / CULTURE / SOUND</span><span>30° 02′ N · 95° 59′ W</span></div>
+          <p className="asset-note">FROM THE YARD TO THE WORLD</p>
         </div>
         <div className="hero-vertical">PRAIRIE VIEW, TEXAS — INDEPENDENT SINCE DAY ONE</div>
       </section>
