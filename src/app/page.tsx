@@ -13,7 +13,7 @@ export default function Home() {
           <span className="wordmark-sub">RECORDS · PRAIRIE VIEW, TX</span>
         </a>
         <nav className="desktop-nav" aria-label="Main navigation">
-          <a href="#artists">Artists</a><a href="#music">Music</a><a href="#culture">Culture</a><a href="#live">Live</a><a href="#about">About</a>
+          <a href="#artists">Artists</a><a href="#music">Music</a><a href="#culture">Culture</a><a href="#yard-archive">Gallery</a><a href="#live">Live</a><a href="#about">About</a>
         </nav>
         <a className="header-cta" href="#contact">Work with us <Arrow /></a>
         <details className="mobile-menu"><summary aria-label="Open navigation">Menu <span>＋</span></summary><div className="mobile-menu-links"><a href="#artists">Artists</a><a href="#music">Music</a><a href="#culture">Culture</a><a href="#live">Live</a><a href="#about">About</a><a href="#contact">Contact</a></div></details>
@@ -29,12 +29,10 @@ export default function Home() {
           </div>
           <span className="hero-index">PVAMU · EST. BY STUDENTS</span>
         </div>
-        <div className="hero-art" role="img" aria-label="Schoolyard Records graphic artwork in a vibrant editorial style">
+        <div className="hero-art" role="img" aria-label="Schoolyard Records colorful graffiti wordmark">
+          <Image src="/images/schoolyard-graffiti.jpg" alt="Schoolyard Records graffiti logo" fill sizes="(max-width: 700px) 92vw, 45vw" className="hero-logo-image" />
           <div className="hero-art-top"><span>THE SCHOOLYARD UNIVERSE</span><span>VOL. 001</span></div>
-          <div className="hero-art-shape shape-one" /><div className="hero-art-shape shape-two" />
-          <div className="hero-art-stamp">SY<br /><small>RECORDS</small></div>
           <div className="hero-art-bottom"><span>ARTISTS / CULTURE / SOUND</span><span>30° 02′ N · 95° 59′ W</span></div>
-          <p className="asset-note">FROM THE YARD TO THE WORLD</p>
         </div>
         <div className="hero-vertical">PRAIRIE VIEW, TEXAS — INDEPENDENT SINCE DAY ONE</div>
       </section>
@@ -81,7 +79,7 @@ export default function Home() {
 
       <section className="contact-section" id="contact"><div className="contact-copy"><p className="eyebrow">06 / LET’S BUILD</p><h2>YOUR NEXT<br />MOVE STARTS<br /><em>HERE.</em></h2><p>Artists, creative talent, collaborators, and industry partners — tell us what you have in mind.</p></div><div className="contact-links"><a href="mailto:schoolyardrecords1876@gmail.com?subject=Schoolyard%20Records%20Inquiry"><span>GENERAL INQUIRIES</span><strong>Get in touch <Arrow /></strong></a><a href="mailto:schoolyardrecords1876@gmail.com?subject=Artist%20Submission"><span>ARTISTS & MUSIC</span><strong>Submit your work <Arrow /></strong></a><a href="mailto:schoolyardrecords1876@gmail.com?subject=Partnership%20Inquiry"><span>PARTNERSHIPS & BOOKINGS</span><strong>Work with Schoolyard <Arrow /></strong></a></div></section>
 
-      <footer className="site-footer"><a className="footer-wordmark" href="#home">SCHOOLYARD<span>®</span></a><div className="footer-middle"><span>INDEPENDENT BY NATURE.</span><span>PRAIRIE VIEW, TEXAS</span></div><div className="footer-links"><a href="#artists">Artists</a><a href="#music">Music</a><a href="#contact">Contact</a></div><p className="copyright">© {new Date().getFullYear()} SCHOOLYARD RECORDS. ALL RIGHTS RESERVED.</p></footer>
+      <footer className="site-footer"><a className="footer-wordmark" href="#home">SCHOOLYARD<span>®</span></a><div className="footer-middle"><span>INDEPENDENT BY NATURE.</span><span>PRAIRIE VIEW, TEXAS</span></div><div className="footer-links"><a href="#artists">Artists</a><a href="#music">Music</a><a href="#yard-archive">Gallery</a><a href="#contact">Contact</a></div><p className="copyright">© {new Date().getFullYear()} SCHOOLYARD RECORDS. ALL RIGHTS RESERVED.</p></footer>
     </main>
   );
 }
