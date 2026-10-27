@@ -73,7 +73,7 @@ export default function Home() {
           <p className="archive-intro">Campus energy, the people who show up, and the memories we’re building together. Real Schoolyard moments, from the community outward.</p>
         </div>
         <div className="archive-grid">
-          <figure className="archive-card archive-featured"><div className="archive-photo"><Image src="/images/culture-yard-01.jpg" alt="Schoolyard student event with students gathered around the community" fill sizes="(max-width: 700px) 92vw, 48vw" /></div><figcaption><span>01 — THE COMMUNITY</span><strong>Outside, together.</strong></figcaption></figure>
+          <figure className="archive-card archive-featured"><div className="archive-photo"><Image src="/images/culture-yard-01.webp" alt="Schoolyard student event with students gathered around the community" fill sizes="(max-width: 700px) 92vw, 48vw" /></div><figcaption><span>01 — THE COMMUNITY</span><strong>Outside, together.</strong></figcaption></figure>
           <figure className="archive-card"><div className="archive-photo"><Image src="/images/culture-yard-02.jpg" alt="Students together at a campus gathering" fill sizes="(max-width: 700px) 92vw, 27vw" /></div><figcaption><span>02 — CAMPUS ENERGY</span><strong>Every face, part of the story.</strong></figcaption></figure>
           <figure className="archive-card"><div className="archive-photo"><Image src="/images/culture-team.jpg" alt="Schoolyard team gathered for a group photograph" fill sizes="(max-width: 700px) 92vw, 27vw" /></div><figcaption><span>03 — THE PEOPLE</span><strong>Built by the community.</strong></figcaption></figure>
         </div>
