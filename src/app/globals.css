@@ -67,3 +67,11 @@
 .roster-open-side small{font:8px var(--mono);letter-spacing:.1em;color:#aaa1b8;text-align:center}
 @media(max-width:900px){.archive-grid{grid-template-columns:1fr 1fr}.archive-featured{grid-column:1/-1}.archive-featured .archive-photo{aspect-ratio:16/9}.archive-heading{align-items:flex-start}.roster-open-call{grid-template-columns:1fr .8fr}.roster-open-side{padding:22px}}
 @media(max-width:680px){.culture-archive{padding-top:68px;padding-bottom:68px}.archive-heading{flex-direction:column;gap:17px;margin-bottom:28px}.archive-grid{grid-template-columns:1fr;gap:25px}.archive-featured{grid-column:auto}.archive-featured .archive-photo,.archive-photo{aspect-ratio:4/3}.archive-card figcaption{padding-top:11px}.archive-card figcaption strong{font-size:17px}.roster-open-call{grid-template-columns:1fr}.roster-open-copy{padding:27px 23px}.roster-open-side{border-left:0;border-top:1px solid #473253;min-height:270px}.roster-sigil{width:125px}.roster-open-side>div span{font-size:7px}}
+
+
+/* Let the real graffiti mark lead the landing page */
+.hero-art{background:#100d16;padding:18px;isolation:isolate}
+.hero-art:before{display:none}
+.hero-logo-image{object-fit:contain!important;padding:34px;z-index:1}
+.hero-art-top,.hero-art-bottom{color:#fffdfb;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+@media(max-width:680px){.hero-logo-image{padding:24px}.desktop-nav{display:none}}
