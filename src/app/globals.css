@@ -75,3 +75,18 @@
 .hero-logo-image{object-fit:contain!important;padding:34px;z-index:1}
 .hero-art-top,.hero-art-bottom{color:#fffdfb;text-shadow:0 1px 8px rgba(0,0,0,.35)}
 @media(max-width:680px){.hero-logo-image{padding:24px}.desktop-nav{display:none}}
+
+
+/* Release announcement artwork — no fake cover or artist credit */
+.release-art-coming{background:radial-gradient(circle at 72% 28%,rgba(124,216,255,.55),transparent 26%),linear-gradient(145deg,#251246 0%,#100d16 54%,#3a164d 100%);color:#fffdfb;min-height:350px;display:flex;align-items:center;justify-content:center}
+.release-art-coming:before{content:"";position:absolute;width:74%;aspect-ratio:1;border:1px solid rgba(255,62,170,.78);border-radius:50%;transform:rotate(-20deg);box-shadow:0 0 0 18px rgba(118,87,255,.08),0 0 0 36px rgba(124,216,255,.055)}
+.release-art-orbit{position:absolute;border:1px solid rgba(124,216,255,.8);border-radius:50%;width:68%;aspect-ratio:1;transform:rotate(35deg) scaleY(.45)}
+.orbit-one{border-color:#ff3eaa;transform:rotate(-32deg) scaleY(.5)}
+.orbit-two{width:84%;border-color:rgba(124,216,255,.75);transform:rotate(38deg) scaleY(.37)}
+.release-cover-sigil{position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:135px;aspect-ratio:1;border-radius:50%;border:2px solid #fffdfb;background:rgba(16,13,22,.55);box-shadow:0 0 0 8px rgba(255,255,255,.08);font:700 52px/1 var(--display);letter-spacing:-.12em}
+.release-cover-sigil span{font:8px var(--mono);letter-spacing:.18em;margin-top:7px}
+.release-art-topline,.release-art-bottomline{position:absolute;z-index:2;left:20px;right:20px;font:8px var(--mono);letter-spacing:.12em;color:#fffdfb}
+.release-art-topline{top:20px;display:flex;justify-content:space-between;gap:10px}
+.release-art-bottomline{bottom:23px;font-size:clamp(18px,2.4vw,28px);font-weight:500;line-height:.96;letter-spacing:-.035em;text-align:left}
+.release-info h3{max-width:360px}
+@media(max-width:680px){.release-art-coming{min-height:300px}.release-cover-sigil{width:116px}.release-art-topline{font-size:7px;left:14px;right:14px}.release-art-bottomline{left:14px;bottom:17px}}
